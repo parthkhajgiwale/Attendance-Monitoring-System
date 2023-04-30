@@ -1,0 +1,118 @@
+/* Base styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .form input[type="text"]:focus {
+    outline: none;
+    border-color: #336EFF;
+  }
+  
+  .form button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #336EFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form button:hover {
+    background-color: #336EFF;
+  }
+  
+  .attendance {
+    margin-top: 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #336EFF;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .PRESENT {
+    color: green;
+  }
+  
+  .ABSENT {
+    color: red;
+  }
+  
+  .footer {
+    background-color: #336EFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    
+    .form input[type="text"] {
+      margin-bottom: 10px;
+    }
+    
+    .form button {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
