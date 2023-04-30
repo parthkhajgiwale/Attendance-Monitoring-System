@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Monitoring System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Attendance Monitoring System</h1>
+		<div class="form">
+			<label for="studentName">Student Name:</label>
+			<input type="text" id="studentName">
+			<label for="studentID">Student ID:</label>
+			<input type="text" id="studentID">
+			<button id="presentBtn">Present</button>
+			<button id="absentBtn">Absent</button>
+			<div id="error"></div>
+		</div>
+		<div class="attendance">
+			<h2>Attendance Record</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Student Name</th>
+						<th>Student ID</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody id="attendanceTableBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
